@@ -5,6 +5,8 @@ defmodule Teacher.Application do
   # for more information on OTP Applications
   def start(_type, _args) do
     import Supervisor.Spec
+    Teacher.Airports.Loader.load()
+
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository

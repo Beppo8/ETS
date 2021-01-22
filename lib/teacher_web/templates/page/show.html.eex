@@ -1,0 +1,21 @@
+<h2><%= @airport.code %> Airport</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @airport.name %></td>
+      <td><%= @airport.city %></td>
+      <td><%= @airport.country %></td>
+      <td><%= @airport.latitude %></td>
+      <td><%= @airport.longitude %></td>
+    </tr>
+  </tbody>
+</table>
